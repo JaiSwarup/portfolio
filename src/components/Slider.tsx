@@ -6,7 +6,7 @@ import { motion} from "framer-motion";
 
 const Slider = () => {
     return (
-        <>
+        <section className="pt-10 pb-5">
             <h2 className="text-white text-3xl my-10 font-medium text-center">Skills</h2>
             <div className="p-4 w-full flex gap-4 mb-10 overflow-hidden">
                 <motion.div 
@@ -28,7 +28,7 @@ const Slider = () => {
                     ))}
                 </motion.div>
             </div>
-        </>
+    </section>
     );
 };
 

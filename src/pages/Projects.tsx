@@ -2,6 +2,13 @@ import ProjectCard from "../components/ProjectCard";
 const Projects = () => {
     const projects = [
         {
+            title: "Chat App",
+            src: "/chat-app.png",
+            description: "",
+            link: "https://chat-app-swart-psi.vercel.app/",
+            github: "https://github.com/JaiSwarup/chat-app"
+        },
+        {
             title: "Weather App",
             src: "/weather-app.png",
             description: "",

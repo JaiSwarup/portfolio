@@ -3,7 +3,7 @@ import Socials from "./Socials";
 const Hero = () => {
     return (
         <>
-            <div className='flex flex-col items-center h-full text-white mt-10 text-center md:text-left'>
+            <div className='flex flex-col items-center h-full text-white mt-10 text-center md:text-left py-10'>
                 <div className="flex flex-col-reverse md:flex-row w-full justify-evenly items-center">
                     <div className="flex flex-col w-1/2">
                         <h2 className="text-7xl font-bold mb-5">

@@ -8,7 +8,7 @@ interface ProjectCardProps {
     title : string
     src : string
     description? : string
-    link: string
+    link?: string
     github: string
 }
 const ProjectCard : React.FC<ProjectCardProps> = ({title, src, description, link, github}) => {
@@ -18,7 +18,7 @@ const ProjectCard : React.FC<ProjectCardProps> = ({title, src, description, link
             <AnimatePresence>
             <motion.div onHoverStart={()=>setShowOverLay(true)} onHoverEnd={()=>setShowOverLay(false)} className="w-full" >
             {showOverLay && <motion.div className="absolute inset-0 h-56 w-full bg-black bg-opacity-50 flex items-center justify-center" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>
-                <Link className="font-normal bg-white rounded-full text-black py-2 px-4 text-lg flex items-center justify-center" target="_black" to={link}>{"Live Demo "} <IoOpenOutline className="text-3xl pl-2 place-content-center" /></Link>
+                {link && <Link className="font-normal bg-white rounded-full text-black py-2 px-4 text-lg flex items-center justify-center" target="_black" to={link}>{"Live Demo "} <IoOpenOutline className="text-3xl pl-2 place-content-center" /></Link>}
             </motion.div>}
             <img src={src} alt={`Project: ${title}`} className="h-56 w-full object-cover self-center" />
             </motion.div>

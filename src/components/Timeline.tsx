@@ -22,7 +22,7 @@ const Timeline = () => {
     ]
     return (
     <div className="relative border-s border-gray-200">                  
-        <div className="mb-10 ms-6 flex flex-col gap-5">  
+        <div className="ms-6 flex flex-col gap-5">  
             {data.map((item, index) => (
                 <div key={index}>
                     <span className="absolute flex items-center justify-center w-6 h-6 rounded-full -start-3 ring-4 ring-white bg-blue-900">
